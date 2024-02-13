@@ -1,1 +1,176 @@
-
+//Hello World
+#include<iostream>
+using namespace std;
+int main ()
+{
+    cout<<"Hello World...!";
+    return 0;
+}
+//Hello World with New Line
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello World...!\nHello World...!";
+    return 0;
+}
+//Hello World with Tab
+#include<iostream>
+using namespace std;
+int main ()
+{
+    cout<<"Hello\tWorld...!";
+    return 0;
+}
+//Character Input
+#include<iostream>
+using namespace std;
+int main()
+{
+    char a;
+    cin>>a;
+    cout<<a;
+    return 0;
+}
+//ASCII Value
+#include<iostream>
+using namespace std;
+int main()
+{
+    char a;
+    cin>>a;
+    int b=a;
+    cout<<b;
+    return 0;
+}
+//ASCII Value-II
+#include<iostream>
+using namespace std;
+int main()
+{
+    int l;
+    cin>>l;
+    char d=l;
+    cout<<d;
+}
+//Float Input
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float p;
+    cin>>p;
+    cout<<fixed<<setprecision(6)<<p;
+    
+    return 0;
+}
+//Float Formatting
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float f;
+    cin>>f;
+    cout<<fixed<<setprecision(6)<<f;
+    cout<<fixed<<setprecision(3)<<"\n"<<f;
+    cout<<fixed<<setprecision(2)<<"\n"<<f;
+    cout<<fixed<<setprecision(1)<<"\n"<<f;
+}
+//Integer Input
+#include<iostream>
+using namespace std;
+int main()
+{
+    int s;
+    cin>>s;
+    cout<<s;
+    
+    return 0;
+}
+//Round off
+#include<iostream>
+#include<math.h>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float h,g,j;
+    cin>>h;
+    int s=h;
+    g=ceil(h);
+    j=floor(h);
+    cout<<s<<"\n"<<fixed<<setprecision(1)<<g<<"\n"<<fixed<<setprecision(1)<<j;
+    
+}
+//Statistics
+#include<iostream>
+using namespace std;
+int main()
+{
+    int b,i,n;
+    cin>>b>>i>>n;
+    cout<<"1)Dead:"<<b<<"\n"<<"2)Injured:"<<i<<"\n"<<"3)Safe:"<<n<<"\n"<<"Please help the people who are suffering!!!";
+}
+//Welcome to Programming
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Hello People! Welcome to our desert.";
+}
+//Stadium Name
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"MECON"<<"\n"<<"Stadium";
+}
+//Cricketer's Age
+#include<iostream>
+using namespace std;
+int main ()
+{
+    int u;
+    cin>>u;
+    cout<<"The cricketer age is "<<u;
+}
+//Bowling Speed
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main ()
+{
+    double g;
+    cin>>g;
+    cout<<fixed<<setprecision(2)<<g;
+}
+//Welcome Aliens
+#include<iostream>
+using namespace std;
+int main ()
+{
+    cout<<"Hello Aliens ! Welcome to our planet Earth.";
+}
+//Dhoni's nick name!!!
+#include<iostream>
+using namespace std;
+int main ()
+{
+    cout<<"M.S, MSD, Mahi, Thala, Ranchi Rocker, Captain Cool";
+}
+//Dhoni's Family!!!
+#include<iostream>
+using namespace std;
+int main ()
+{
+    cout<<"M. S. Dhoni\nFather: Mr. Pan Singh\nMother: Mrs. Devki Devi\nSibings: Narendra Singh and Jayanti Gupta";
+}
+//Dhoni's Endorsements!!!
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Pepsico\nAIRCEL\nCommunications\nTitan\nTVS\nMotors\nBoost\nReebok\nVideocon\nGE Money";
+}
