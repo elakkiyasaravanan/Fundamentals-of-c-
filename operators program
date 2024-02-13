@@ -32,3 +32,13 @@ int main ()
     cout<<(2*(l+b))<<"\n"<<(l*b);
     
 }
+//Culturals Training
+#include<iostream>
+using namespace std;
+int main()
+{
+    int s1,n;
+    cin>>s1>>n;
+    cout<<(s1/n)<<"\n"<<s1-(n*(s1/n));
+}
+
