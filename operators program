@@ -41,4 +41,294 @@ int main()
     cin>>s1>>n;
     cout<<(s1/n)<<"\n"<<s1-(n*(s1/n));
 }
+//Paper Bags Agency
+#include<iostream>
+using namespace std;
+int main()
+{
+    int w,x,y;
+    cin>>w>>x>>y;
+    cout<<((w*x)-(w*y+100));
+}
+//Team Flash
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float x1,y1,x2,y2;
+    cin>>x1>>y1>>x2>>y2;
+    cout<<fixed<<setprecision(1)<<((x1+x2)/2);
+    cout<<fixed<<setprecision(1)<<"\n"<<((y1+y2)/2);
+}
+//The Chronicles of Narnia
+#include<iostream>
+using namespace std;
+int main ()
+{
+    int a,b,sum=0;
+    cin>>a;
+    sum=a%10;
+    b=a/10;
+    cout<<(sum+b);
+    
+}
+//Romans VS Greeks
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x,y,l;
+    cin>>x>>y>>l;
+    cout<<(x+(l/2))<<" "<<(y+(l/2));
+    
+}
+//New Member in Team Flash
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float x1,y1,x2,y2,x3,y3;
+    cin>>x1>>y1>>x2>>y2>>x3>>y3;
+    cout<<fixed<<setprecision(1)<<((x1+x2+x3)/3)<<"\n"<<fixed<<setprecision(1)<<((y1+y2+y3)/3);
+    
+}
+//The Discount
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+   float p1,p2,dis,t,f,a,e;
+   cin>>p1>>p2>>dis;
+   t=p1+p2;
+   f=(t*(dis/100));
+   a=t-f;
+   e=t/dis;
+   cout<<fixed<<setprecision(2)<<t<<"\n"<<fixed<<setprecision(2)<<a<<"\n"<<fixed<<setprecision(2)<<f;
+    return 0;
+}
+//#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e,f;
+    cin>>a>>b>>c;
+    d=((b*a)/100);
+    cout<<d;
+    e=(a-d)*c/100;
+    cout<<"\n"<<e;
+    f=a-(d+e);
+    cout<<"\n"<<f/3;
+    
+    return 0;
+}
+//Binfon a Tribal
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,year,week,week2,day;
+    cin>>n;
+    cout<<(n/365);
+   year=n%365;
+   week=year/7;
+   week2=year%7;
+   day=week2;
+    cout<<"\n"<<week;
+    cout<<"\n"<<day;
+    return 0;
+}
+//The Baggings
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+  int a,b,c,d,e;
+  cin>>a>>b;
+  c=pow((a-3),2);
+  d=pow((b-4),2);
+  e=sqrt(c+d);
+  cout<<e;
+  
+}
+//Chill Fact
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int t,v;
+    cin>>t>>v;
+    cout<<fixed<<setprecision(2)<<(35.74+(0.6215*t)+((0.4275*t)-35.75)*pow(v,0.16));
+    
+    return 0;
+}
+//Sum and Difference
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<a+b;
+    cout<<"\n"<<a-b;
+}
+//Product and Division
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<a*b<<"\n"<<a/b<<"\n"<<a%b;
+}
+//Swapping two numbers
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b;
+    c=a;
+    a=b;
+    b=c;
+    cout<<a<<"\n"<<b;
+    
+}
+//Swapping two numbers without third variable
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    cout<<a<<"\n"<<b;
+}
+//Average Calculation
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,c,d,e;
+    cin>>a>>b>>c>>d>>e;
+    cout<<fixed<<setprecision(2)<<(a+b+c+d+e)/5;
+}
+//Area Calculation
+#include <iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int side,length,breadth,a,b;
+    float c,radius;
+    cin>>side>>length>>breadth>>radius;
+    c=(3.14*radius*radius);
+    b=length*breadth;
+    a=side*side;
+    cout<<a<<"\n"<<b<<"\n"<<fixed<<setprecision(2)<<c;
+}
+//Power of a number
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int x,n;
+    cin>>x>>n;
+    cout<<pow(x,n);
+}
+//Alice in Wonderland
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    cin>>a;
+    b=a/10;
+    c=a%10;
+    d=b+c;
+    cout<<"Alice must go in path-"<<d;
+}
+//Simple Interest
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int p,n;
+    float r;
+    cin>>p>>n>>r;
+    cout<<fixed<<setprecision(2)<<((p*n*r)/100);
+}
+//3 iditos
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,c,d;
+    cin>>a>>b>>c>>d;
+    cout<<fixed<<setprecision(1)<<"Binoy's house is located at ("<<((a+c)/2)<<","<<((b+d)/2)<<")";
+}
+//spliting into teams
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b;
+    c=a-((a/b)*b);
+    cout<<"The number of students in each team is "<<(a/b)<<" and left out is "<<c;
+}
+//Ternary Operator
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    cout<<((a%2==0)?"Even":"Odd");
+}
+//Fencing The Ground
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,l,p;
+    cin>>a>>b;
+    l=((2*a)+(2*b));
+    p=a*b;
+    cout<<"Required length is "<<l<<"m"<<"\nRequired quantity of carpet is "<<p<<"sqm";
+}
+//Jack Sparrow’s Treasure Hunt
+#include<iostream>
+using namespace std;
+int main()
+{
+ int a,p,o,u;
+ cin>>a;
+ p=a/1000;
+ o=a%10;
+ u=p+o;
+ cout<<u;
+}
+//Profit Calculation
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x,a,b,r;
+    cin>>x>>a>>b;
+    r=(x*a)-(x*b+100);
+    cout<<"The profit obtained is Rs."<<r;
+}
+//
 
