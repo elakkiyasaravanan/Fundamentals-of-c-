@@ -1,0 +1,516 @@
+//Rabina is interested so much in gardening and she plants more trees in her garden. She plants trees in the order of rows and columns. She numbered the trees in column wise order. She planted mango tree only in the second column from both first and last. But later when the trees grew up she forgot where she planted mango trees. So help her to find whether the given tree number is a number of mango trees or not. Display whether “It is a mango tree” or “It is not a mango tree”.
+  #include<iostream>
+using namespace std;
+int main()
+{
+    int t,r,c;
+    cin>>r>>c>>t;
+    if((t>r)&& (t<=r*2))
+    {
+        cout<<"It is a mango tree";
+    }
+    else if((t<=((c-1)*r))&&(t>((c-2)*r)))
+    {
+        cout<<"It is a mango tree";
+    }
+    else
+    {
+        cout<<"It is not a mango tree";
+    }
+}
+//Greatest of two numbers
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    if(a>b)
+    {
+        cout<<a<<" is greater";
+    }
+    else
+    {
+        cout<<b<<" is greater";
+    }
+    return 0;
+}
+//Greatest of three numbers
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    if ((a>b)&&(a>c))
+    {
+        cout<<a<<" is greater";
+    }
+    else if((b>c)&&(b>a))
+    {
+        cout<<b<<" is greater";
+    }
+    else
+    {
+        cout<<c<<" is greater";
+    }
+    return 0;
+}
+//Positive or Negative
+#include<iostream>
+using namespace std;
+int main()
+{
+   int a;
+   cin>>a;
+   if(a>0)
+   {
+       cout<<"Positive";
+   }
+   else if (a<0)
+   
+  {
+      cout<<"Negative";
+  }
+  else
+  {
+      cout<<"Equal to 0";
+  }
+    return 0;
+
+}
+//Dev went a tour to Goa with his friends. There they went for boating. The rule is that only restricted weight can travel in a boat at a time so that the boat remains stable in the boat. You find that the boatman who is sailing your boat is so much greedy in making money. For earning more money he takes many number of peoples to travel in the boat at a time. So you wants to check how much number of people can travel in the boat at a time so that the boat will not drown. Calculate the weight by considering the number of adults and number of children.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e,f;
+    cin>>a>>b>>c;
+    d=b*75;
+    e=c*50;
+    f=d+e;
+    if(f<=a)
+    {
+        cout<<"Boat is stable";
+    }
+    else
+    {
+        cout<<"Boat will drown";
+    }
+    return 0;
+}
+//Joshua is interested very much in seeing Bike race. One Bike is coming so fast. The road on which the Bike comes is divided in to three . There are three roads A, B and C. Each road's distance is given in metres. Before the Bike reaches the end of the road Joshua wants to know that out of three roads in which road the Bike will go if he maintains the given speed. Help him in finding in which road the Bike will travel?
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,n;
+    cin>>a>>b>>c>>n;
+    if(a%n==0)
+    {
+        cout<<"Bike 1 goes into road A";
+    }
+    else if(b%n==0)
+    {
+        cout<<"Bike 1 goes into road B";
+    }
+    else if(c%n==0)
+    {
+        cout<<"Bike 1 goes into road C";
+    }
+    else
+    {
+        cout<<"No path exist";
+    }
+    return 0;
+}
+//Alisha is very interested in mathematics and daily she loves to solve mathematic puzzles. Her friend knows that and she asks her to find what an automorphic number is and to implement that concept using C programming. But Alisha is not very much good in programming. So help Alisha to implement this concept.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a;
+    b=a*a;
+    c=b%10;
+    if(c==a)
+    {
+        cout<<"Automorphic Number";
+    }
+    else
+    {
+        cout<<"Not Automorphic Number";
+    }
+    return 0;
+}
+// program to find whether a given character is an upper,lower, number or symbols
+#include<iostream>
+using namespace std;
+int main()
+{
+    char a;
+    cin>>a;
+    if((a>='a')&&(a<='z'))
+    {
+        cout<<"Lower";
+    }
+    else if((a>='A')&&(a<='Z'))
+    {
+        cout<<"Upper";
+    }
+    else if ((a>=48)&&(a<=57))
+    {
+        cout<<"Number";
+    }
+    else
+    {
+        cout<<"Symbol";
+    }
+    return 0;
+}
+//Electricity board have decided to charge rupees based on the units consumed by particular home. If the units consumed is less than or equal to 200 the cost for one unit is 0.5. If the unit is less than or equal to 400 the cost for one unit is 0.65 and Rs.100 extra charge. If the unit is less than or equal to 600 the cost for one unit is 0.80 and Rs.200 extra charge. If the unit is greater than 600 the cost for one unit is 1.25 and Rs.425 extra charge.
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+   int unit;
+   cin>>unit;
+   if(unit<=200)
+   {
+       cout<<"Rs."<<round((unit*0.5));
+   }
+   else if(unit<=400)
+   {
+       cout<<"Rs."<<round(((unit*0.65)+100));
+       }
+   else if(unit<=600)
+   {
+       cout<<"Rs."<<round(((unit*0.80)+200));
+   }
+   else
+   {
+       cout<<"Rs."<<(((unit*1.25)+425));
+   }
+}
+//Sabrina and Theo were friends. They felt very bored and decided to play a game with calendar and number of days. Sabrina will give the month and the year as input, and Theo wants to find the number of days in that month. Write a C program using switch case and help Sabrina to find the answer. You should check whether the given year is a leap year. If it is a leap year it will have 29 days in February.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int month,year;
+    cin>>month>>year;
+    switch(month)
+    {
+        case 1:cout<<"Number of days is 31";
+        break;
+        case 2:
+        if((year%400==0||year%100!=0&&year%4==0)&&(month==2))
+       {
+           cout<<"Number of days is 29";
+       }
+       else
+       {
+           cout<<"Number of days is 28";
+       }
+        break;
+        case 3:cout<<"Number of days is 31";
+        break;
+        case 4:cout<<"Number of days is 30";
+        break;
+        case 5:cout<<"Number of days is 31";
+        break;
+        case 6:cout<<"Number of days is 30";
+        break;
+        case 7:cout<<"Number of days is 31";
+        break;
+        case 8:cout<<"Number of days is 31";
+        break;
+        case 9:cout<<"Number of days is 30";
+        break;
+        case 10:cout<<"Number of days is 31";
+        break;
+        case 11:cout<<"Number of days is 30";
+        break;
+        case 12:cout<<"Number of days is 31";
+        break;
+        default:break;
+    }
+    return 0;
+}
+//A wall is of length L and breadth B. Karthi is trying to fit two rectangular paintings in it. He wants to fit these paintings on the wall such that they do not overlap on each other or they should not move outside the area of the wall. He also knows the length and breadth of both the paintings. Help him in finding whether two paintings can fit in to the wall properly or not.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int l1,b1,l2,b2,l3,b3,a,n,u,r;
+    cin>>l1>>b1>>l2>>b2>>l3>>b3;
+    a=l1*b1;
+    n=l2*b2;
+    u=l3*b3;
+    r=n+u;
+    if(r<=a)
+    {
+      cout<<"Karthi can fix both painting";  
+    }
+    else
+    {
+        cout<<"Karthi cannot fix both painting";
+    }
+    return 0;
+}
+//Siva after finishing his degree joined a company in Gurugram. His Manager have said him that Siva will get increment if he works hard. As he belongs to a middle class family he wants to plan the budget according to his salary. He stays in hostel. His expenses are Hostel fees, bank loan interest. He wants to find whether he can save money or he want to work hard or his salary will be able to manage his expenses alone. Help him in calculating the budget.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int b,o,m,r,a,e;
+    cin>>b>>o>>m>>r>>a;
+    e=o+m+r+a;
+    if(b<e)
+    {
+        cout<<"He wants to work hard"; 
+    }
+    else if (b>e)
+    {
+        cout<<"He can save the money";
+    }
+    else
+    {
+        cout<<"His salary will be able to manage his expenses alone";
+    }
+    
+    
+    return 0;
+}
+//Ajay wants to buy a T-shirt. As he is very lazy, he decided to buy the T-shirt through online shopping. He chooses a T-shirt in Flipkart and surprised to see the same T-shirt also in Amazon and Snapdeal. So he decided to buy the T-shirt in which the price of the T-shirt is low. The price of the T-shirt, discount % and the shipping charges of all three websites have been given as input. Help in calculating the price of T-shirt in each website and help him to decide which website has low price.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e,f,g,h,i,fl,am,sn;
+    cin>>a>>b>>c>>d>>e>>f>>g>>h>>i;
+    fl=(a-((a*b)/100)+c);
+    sn=(d-((d*e)/100)+f);
+    am=(g-((g*h)/100)+i);
+    cout<<"In Flipkart Rs."<<fl;
+    cout<<"\nIn Snapdeal Rs."<<sn;
+    cout<<"\nIn Amazon Rs."<<am;
+    if((fl<sn)&&(fl<am))
+    {
+        cout<<"\nHe will prefer Flipkart";
+    }
+    else if((sn<fl)&&(sn<am))
+    {
+        cout<<"\nHe will prefer Snapdeal";
+    }
+    else
+    {
+        cout<<"\nHe will prefer Amazon";
+    }
+    return 0;
+}
+//Geralt starts a new stationery shop. He wants to calculate the number of items that are sold and the number of items that are remaining in the stock. When a customer asks for a new item he should check whether the item is already sold or it is available. If the item is not available it should display, "Out of stock". If it is there it should display remaining number of items available and the total cost that should be paid by a customer. If the items asked by the customer is greater than the items available it should display how much number of item is available.
+For eg: If customer asks 8 scales and only 3 scales are available, display "Only 3 scale are available"
+ #include<iostream>
+using namespace std;
+int main()
+{
+    string p;
+    cin>>p;
+    int a,b,c;
+    cin>>a>>b>>c;
+    cout<<"Amount for "<<c<<" "<<p<<" is "<<(b*c)<<"\nRemaining number of "<<p<<" present in stock is "<<(a-c);
+}
+//You are so much interested in making your body fit. You want to go to gym daily to make your body fit. But your mother did not like to allow you to gym. But she says she will allow you to gym if your weight is not normal. So you want to calculate your Body Mass Index.
+Write a C program to calculate your BMI for your weight and height. Enter your height in centimeters and weight in kilograms.
+  #include<iostream>
+using namespace std;
+int main()
+{
+    float w,h,a;
+    cin>>w>>h;
+    a=((w/(h*h))*10000);
+    if(a<18)
+    {
+        cout<<"You are underweight. Have an apple daily";
+    }
+    else if(a>25)
+    {
+        cout<<"You are obese. Go to doctor";
+    }
+    else
+    {
+        cout<<"You are normal. Go walking daily and maintain it";
+    }
+}
+//Karan have a cylindrical tank in which he have to fill water in certain hours. For every one hour his house will receive N litres of water from the corporation. Find whether he will be able to fill the tank with water in X hours. The radius and height of cylinder is given as input:
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+     int r,h,a,x,vl;
+     float n;
+     cin>>r>>h>>a>>n;
+     vl=3.14*r*r*h;
+     if(vl<(a*n))
+     {
+      cout<<"The tank can be filled within "<<fixed<<setprecision(1)<<n<<" hours";
+     }
+     
+        return 0;
+}
+//On one fine Sunday Shilpa and Rabina decided to solve puzzles. Shilpa asked Rabina to solve her puzzle. Shilpa gave puzzle on Time. She gave Rabina the number of hours, number of minutes and number of seconds as input. With the given input, Rabina should find the total number of hours total number of minutes and total number of seconds.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int h,m,s;
+    cin>>h>>m>>s;
+    if(m>=60)
+    {
+        h=h+1;
+        m=m-60;
+    }
+    else if(s>=60)
+    {
+        m=m+1;
+        s=s-60;
+    }
+    cout<<"Total Number of hours is "<<h<<"\nTotal Number of minutes is "<<m<<"\nTotal Number of seconds is "<<s;
+}
+//Abraham after getting his first salary decided to go to bank to deposit his savings in his account. Before that he does not know the process that are undertaken in bank. Help him in understanding the process of depositing money and withdrawal of money. Use switch to implement this concept.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    switch(b)
+    {
+        case 1:cout<<(a+c);break;
+        case 2:(c<a);
+        cout<<"Insufficient Balance";break;
+        default :cout<<"Invalid Input";break;
+    }
+}
+//Zack is going to celebrate his birthday on January. His father wants to buy a new dress for his son. As they are Christian, he also wants to buy new dress for Christmas. As all the textile showrooms offers discount on the month of December his father decides to buy dress for Zack's birthday in December itself. Before that he wants to know how much discounts they give on each month. In the first month of the year they offer 20% discount. In the third and fourth month they offer 10% discount. In the sixth and seventh month they offer 75% discount. In the tenth and eleventh month they offer 30% discount. In the twelfth moth they offer 35% discount. Implement this program using switch.
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int m;
+    float a;
+    cin>>a>>m;
+    switch(m)
+    {
+        case 1:(a=(a-(a*0.2)));break;
+        case 2:a==a;break;
+        case 3:
+        case 4:(a=(a-(a*0.1)));break;
+        case 5:a==a;break;
+        case 6:
+        case 7:(a=(a-(a*0.75)));break; 
+        case 8:
+        case 9:a==a;break;
+        case 10:
+        case 11:(a=(a-(a*0.30)));break;
+        case 12:(a=(a-(a*0.35)));break;
+        default: break;
+        
+    }cout<<"//Zack's father needs to pay Rs."<<fixed<<setprecision(2)<<a;
+}
+//Dora is interested so much in gardening and she plants more trees in her garden. She plants trees in a squar fashion with the order of rows and columns and numbered the trees in row-wise order. She planted the Neem tree only in a 1st row, 1st column and last column. So given the tree number, your task is to find whether the given tree is a Neem tree or not? Write a program to check whether the given number is a mango tree or not. Assume that she plants in square matrix order.
+#include<iostream>
+using namespace std;
+int main()
+{
+     int r,c,t;
+     cin>>r>>c>>t;
+     if((t>=1)&&(t<r))
+    {
+        cout<<"No";
+    }
+    else if((t>=(r*c)-5)&&(t<=(r*c)))
+    {
+        cout<<"No";
+    }
+    else
+    {
+        cout<<"Yes";
+    }
+    return 0;
+}
+//Dr. Dexter regularly visits his only friend Dr. Lee. Dr. Lee lives in a city named Nakuto. In order to get to Nakuto, Dr. Dexter has to take National Highways (NH  999). NH 999 has a toll booth where the toll passes are categorized as One-way pass, Two-way pass, and Monthly pass.
+If Dr. Dexter travels to Nakuto and doesn't return the same day, a one-way pass would do better. If he travels to Nakuto and returns to his hometown the same day, a two-way pass is economical. One-way passes cost $O, two-way passes cost $T and monthly-passes cost $M. In a month, Dr. Dexter plans to travel 'x' times to Nakuto and stays there, travel 'y' times to Nakuto and returns home the same day. He wants Xinyou to know whether a combination of one-way and two-way passes would be economical or a monthly pass would be economical. 
+ #include<iostream>
+using namespace std;
+int main()
+{
+     int x,y,o,t,m,a;
+     cin>>x>>y>>o>>t>>m;
+     a=(x*o)+(y*t);
+     if(m<a && o<t && t<m)
+     {
+     
+       cout<<"Monthly Pass";
+     }
+     else if(m>a&& o<t && t<m)
+     {
+         cout<<"One way pass + Two way pass";
+     }
+     else
+     {
+         cout<<"Invalid Input";
+     }
+        return 0;
+  //Dr. Dexter has now started his trip to Shinyao. Unfortunately, he has forgotten about the fuel. There are two gas bunks on the way to Shinyao, 'A' and 'B'. As soon as his car reaches the bunk A, it runs out of fuel. Bunks A and B are 'd' miles apart. Xinyou, the robot finds out from statistics that one of the bunks provides the best quality fuel. They decide on filling the best quality fuel.
+Write a C++ program module that finds the quantity of fuel that has to be filled at bunks A and B.
+  #include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,c,e,f;
+    char d;
+    cin>>a>>b>>c>>d;
+    e=a/c;
+    f=b-a;
+    if(d=='B')
+    {
+        cout<<fixed<<setprecision(2)<<e;
+        cout<<"\n"<<fixed<<setprecision(2)<<(f/c);
+    }
+    else
+    {
+        float J=0;
+        cout<<fixed<<setprecision(2)<<(e+(f/c));
+        cout<<"\n"<<fixed<<setprecision(2)<<J;
+    }
+}
+  //#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,c,e,f;
+    char d;
+    cin>>a>>b>>c>>d;
+    e=a/c;
+    f=b-a;
+    if(d=='B')
+    {
+        cout<<fixed<<setprecision(2)<<e;
+        cout<<"\n"<<fixed<<setprecision(2)<<(f/c);
+    }
+    else
+    {
+        float J=0;
+        cout<<fixed<<setprecision(2)<<(e+(f/c));
+        cout<<"\n"<<fixed<<setprecision(2)<<J;
+    }
+}
+  
+} 
