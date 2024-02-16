@@ -1,0 +1,290 @@
+//Sum of Range
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,e,sum=0;cin>>n>>e;
+    for(int i=n;i<=e;i++)
+    {
+       sum=sum+i; 
+    }cout<<sum;
+}
+//Sum of Numbers
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,sum=0;
+    for(;i!=-1;)
+    {
+        cin>>i;
+        sum=sum+i;
+            
+    }
+    sum=sum+1;
+    cout<<sum;
+}
+//It was Randall's first day at school. His teacher Alisha asked the students to meet every other students in the class and to introduce about themselves. The teacher asked them to do handshakes when they meet each other.
+If there are n number of students in the class then find the total number of handshakes made by the students.
+#include<iostream>
+using namespace std;
+int main()
+{
+     int a,sum=0;
+     cin>>a;
+     for(int i=0;i<a;i++)
+     {
+         sum=sum+i;
+     }cout<<sum;
+        return 0;
+}  
+//Sum of Even and Odd
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+     int n,e=0;
+     float o=0;
+     int c1,c2;
+     float g,h;
+     while(n!=-1)
+     {
+         cin>>n;
+         if(n>0)
+         {
+         if(n%2==0)
+         {
+             e=e+n;
+             c1=c1+1;
+         }
+         else
+         {
+             o=o+n;
+             c2=c2+1;
+         }
+         }
+     }
+     g=e/c1;
+     h=o/c2;
+     cout<<e<<"\n"<<(o)<<"\n"<<fixed<<setprecision(2)<<g<<"\n\n";
+     cout<<fixed<<setprecision(2)<<h;
+     
+        return 0;
+}
+//Multiplication Tables
+#include<iostream>
+using namespace std;
+int main()
+{
+     int n,r;
+     cin>>n>>r;
+     for(int i=1;i<=r;i++)
+     {
+         cout<<n<<" * "<<i<<" = "<<n*i;cout<<"\n";
+     }
+        return 0;
+}
+//Factorial of a given number
+#include<iostream>
+using namespace std;
+int main()
+{
+     int a,fact=1;
+     cin>>a;
+     for(int i=a;i>0;i--)
+     {
+         fact*=i;
+     }cout<<fact;
+        return 0;
+}
+//Fibonacci Number
+#include<iostream>
+using namespace std;
+int main()
+{
+     int a,fibb=0;
+     cin>>a;
+     for(int i=0;i<a;i++)
+     {
+         fibb+=i;
+     }
+     if(fibb==a)
+     {
+         cout<<"Fibonacci number";
+     }
+     else
+     {
+         cout<<"Not Fibonacci number";
+     }
+        return 0;
+}
+//Ralph's teacher Alisha uses chalks to write on board. When the chalk reduces to 1/squarerootNo of its original size she keeps the chalk aside as it gets too small. She joins all the small pieces of the chalk and make another chalk of same size and uses it. If she uses one chalk each day, how much days she uses the given n number of chalks?
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int a,d;
+    float b,c;
+    cin>>a;
+    b=1/(sqrt(a));
+    c=b*a;
+    d=a+c+1;
+    cout<<d;
+    
+}
+//Armstrong Number
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+     int a,n=0,num,result=0,remainder,power;
+     cin>>a;
+     num=a;
+     while (num!=0)
+     {
+       num/=10;
+       n++;
+     }
+     num=a;
+     while(num!=0)
+     {
+         remainder=num%10;
+         power=round(pow(remainder,n));
+         result+=power;
+         num/=10;
+     }
+     if(result==a)
+     {
+         cout<<"Armstrong Number";
+     }
+     else
+     {
+         cout<<"Not an Armstrong Number";
+     }
+        return 0;
+}
+//Prime Number
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,c=0;
+    cin>>n;
+ 
+        for(i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                c=c+1;
+            }
+        }
+            if(c==2)
+            {
+                cout<<"Prime";
+            }
+            else
+            {
+               cout<<"Not prime" ;
+            }
+       
+   
+        return 0;
+}
+//Write a C program to add two dollars and cents:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int d1,c1,d2,c2,c,d;
+    cin>>d1>>c1>>d2>>c2;
+    c=c1+c2;
+    d=d1+d2;
+    while(c>=100)
+    {
+        c=c-100;
+        d=d+1;
+    }
+    cout<<d<<"\n"<<c;
+}
+//Harshard Number
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,sum=0;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        sum=sum+i;
+    }
+    if(n%sum==0)
+    {
+        cout<<"Harshard Number";
+    }
+    else
+    {
+        cout<<"Not Harshard Number";
+    }
+    
+}
+//Abundant Number
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,sum=0;
+    cin>>a;
+    for(int i=1;i<a;i++)
+    {
+        if (a%i==0)
+        {
+            sum=sum+i;
+        }
+    }
+    if(a<sum)
+    {
+        cout<<"Abundant number";
+    }
+    else
+    {
+        cout<<"Not Abundant number";
+    }
+    
+}
+//Write a C program to find whether the given numbers are Friendly Pair or not.
+#include<iostream>
+using namespace std;
+int main()
+{
+     int a,b,sum=0,sum2=0,c,d;
+     cin>>a>>b;
+     for(int i=1;i<=a;i++)
+     {
+         if(a%i==0)
+         {
+             sum=sum+i;
+         }
+    
+     }
+     for(int j=1;j<=b;j++)
+     {
+         if(b%j==0)
+         {
+             sum2=sum2+j;
+         }
+     }
+     c=(sum/a);
+     d=(sum2/b);
+     if(c==d)
+     {
+         cout<<"Friendly Pair";
+     }
+     else
+     {
+         cout<<"Not Friendly Pair";
+     }
+        return 0;
+}
