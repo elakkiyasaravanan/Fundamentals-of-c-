@@ -121,4 +121,33 @@ int main()
         }
     }
 }
-//Write a program to generate the first n terms in the series 
+//Write a program to generate the first n terms in the series 121,225,361,...
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main ()
+{
+    int n,b,c,a=11;
+    cin>>n;
+    c=pow(a,2);
+    cout<<c<<" ";
+    for(int i=2;i<=n;i++)
+    {
+      a=a+4;
+      b=pow(a,2);
+      cout<<b<<" ";
+    }
+}
+//Write a  program to generate the following series – 0, 2, 6, 12, 20…..
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,a;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+      a=(i*i)+i;
+      cout<<a<<" ";
+    }
+}
