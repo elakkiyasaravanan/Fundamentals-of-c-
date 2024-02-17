@@ -1,0 +1,124 @@
+//Write a program to generate the following series – 7, 5, 8, 6,  9….
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    int b=7,c=5;
+    cout<<b<<" "<<c<<" ";
+    for(int i=3;i<=a;i++)
+    {
+        if(i%2==0)
+        {
+            c=c+1;
+            cout<<c<<" ";
+        }
+        else
+        {
+            b=b+1;
+            cout<<b<<" ";
+        }
+    }
+}
+//Write a program to generate the following series – 1, 2, 3, 5, 8….
+#include<iostream>
+using namespace std;
+int main()
+{
+     int n,c;
+     cin>>n;
+     int a=0,b=1;
+     for(int i=1;i<=n;i++)
+     {
+         c=a+b;
+         a=b;
+         b=c;
+         cout<<c<<" ";
+     }
+     
+        return 0;
+}
+//Write a program to generate the following series – 6, 9, 14, 21, 30….
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int a=6;
+    cout<<a<<" ";
+    for(int i=1;i<n;i++)
+    {
+        cout<<(a=((a+(2*i))+1))<<" ";
+    }
+    
+    
+}
+//Write a program to generate the following series – 0, 3, 8, 15, 24….
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int a=0;
+    cout<<a<<" ";
+    for(int i=1;i<n;i++)
+    {
+        cout<<(a=((a+(2*i))+1))<<" ";
+    }
+}
+//Write a program to generate the following series – 2, 4, 7, 12, 21…..
+#include<iostream>
+using namespace std;
+int main()
+{
+     int n,a=2,b;
+     cin>>n;
+     cout<<a<<" ";
+     for(int i=0;i<=(n-1);i++)
+     {
+         a=(a*2)-i;
+         cout<<a<<" ";
+     }
+        return 0;
+}
+//Write a program to generate the following series - 1, 4, 27, 256….
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+     int n,a;
+     cin>>n;
+   
+     for(int i=1;i<=n;i++)
+     {
+         a=pow(i,i);
+         cout<<a<<" ";
+     }
+        return 0;
+}
+//Write a program to generate the following series – 10, 5, 60, 15, 110….
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,a=10,b=5;
+    cin>>n;cout<<a<<" "<<b<<" ";
+    for(int i=0;i<n;i++)
+    {
+        if(i%2==0)
+        {
+            a=(a+50);
+          cout<<a<<" ";
+        }
+        else
+        {
+            b=(b+10);
+            cout<<b<<" ";
+        }
+    }
+}
+//Write a program to generate the first n terms in the series 
