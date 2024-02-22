@@ -18,3 +18,246 @@ int main()
     cin>>a;
     cout<<"The length of "<<a<<" is "<<a.length();
 }
+//Write a C program to copy a string from one variable to other using string library functions.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a,b;
+    cin>>a;
+    b=a;
+    cout<<"The copied string is "<<b;
+}
+//Write a C program to find the reverse of the given string without using string library functions.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a;
+    cin>>a;
+    int b=a.length();
+    cout<<"The reversed string is ";
+    for(int i=b-1;i>=0;i--)
+    {
+       cout<<a[i];
+    }
+}
+//Write a C program to find whether the given two strings are the same or not using string library functions.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a,b;
+    cin>>a>>b;
+    
+    if(a==b)
+    {
+        cout<<"Strings are same";
+    }
+    else
+    {
+        cout<<"Strings are not same";
+    }
+}
+//Write a C program to find the concatenation of the given two strings using string library functions
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a,b,c;
+    cin>>a>>b;
+    c=a+b;
+    cout<<"The concatenated string is "<<c;
+}
+//Write a C program to change the given string to uppercase without using string library functions.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a,b;int i;
+    cin>>a;
+    cout<<"String in uppercase is ";
+    for(int i=0;i<a.length();i++)
+    {
+        b=toupper(a[i]);
+       cout<<b; 
+    }
+}
+//Write a C program to change the given string to lowercase without using string library functions.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a,b;int i;
+    cin>>a;
+    cout<<"String with lowercase is ";
+    for(int i=0;i<a.length();i++)
+    {
+        b=tolower(a[i]);
+       cout<<b; 
+    }
+}
+//Write a C program to find whether the given string is a palindrome or not without using string library functions.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a;
+    cin>>a;
+    string e=a;
+    int b=a.length();
+    for(int i=0;i<(b/2);i++)
+    {
+        char c=a[i];
+        a[i]=a[b-1-i];
+        a[b-1-i]=c;
+    }
+    if(e==a)
+    {
+        cout<<"Palindrome";
+    }
+    else
+    {
+        cout<<"Not a Palindrome";
+    }
+}
+//Write a C program to count the number of vowels in the given string.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a;int count=0;
+    cin>>a;
+    int n=a.size();
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u')
+        {
+            count++;
+        }
+    }cout<<"Number of vowels: "<<count;
+}
+//Write a C program to scan the string from the user and to print it by using gets and puts
+#include<iostream>
+#include<stdio.h>
+#include<string>
+using namespace std;
+int main()
+{
+   string a;
+   cin>>a;
+    cout<<"The string is "<<a;
+}
+//Write a C program to sort the given string.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a;int temp;
+    cin>>a;
+    int n=a.length();
+    for(int i=0;i<n;i++)
+    {
+        for (int j=0;j<n-1;j++)
+        {
+            if(a[j]>a[j+1])
+            {
+            temp=a[j];
+            a[j]=a[j+1];
+            a[j+1]=temp;
+        
+            }
+            
+        }
+    }cout<<"The sorted string is "<<a;   
+}
+
+//Write a C program to check whether the given strings are anagrams or not.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string n,m;cin>>n>>m;
+    int l1=n.size();
+    int l2=m.size();
+   
+        for(int i=0;i<=l1;i++)
+        {
+            for(int j=0;j<l1-1;j++)
+            {
+                if(n[j]>n[j+1])
+                {
+                    int temp=n[j];
+                    n[j]=n[j+1];
+                    n[j+1]=temp;
+                }
+               
+            }
+        }
+     
+        for(int i=0;i<=l2;i++)
+        {
+            for(int j=0;j<l2-1;j++)
+            {
+                if(m[j]>m[j+1])
+                {
+                    int temp=m[j];
+                    m[j]=m[j+1];
+                    m[j+1]=temp;
+                }
+            }
+        }
+       
+        if(m==n)
+        {
+            cout<<"Strings are anagrams";
+        }
+        else
+        {
+            cout<<"Strings are not anagrams";
+        }  
+}
+//Write a program to delete the vowels in the given string and display the string without vowels.
+#include<iostream>
+#include<string>
+using namespace std;
+int main ()
+{
+    string a;
+    cin>>a;
+    int n=a.length();
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]!='a'&& a[i]!='e'&& a[i]!='i'&& a[i]!='o'&& a[i]!='u')
+        {
+            cout<<a[i];
+        }
+    }
+}
+//Given a string containing many consecutive spaces, trim all the spaces such that there is no space between the words and letters.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string n;
+    getline(cin,n);
+    int a=n.length();
+    for(int i=0;i<a;i++)
+    {
+        if(n[i]!=' ')
+        {
+            cout<<n[i];
+        }
+    }
+}
