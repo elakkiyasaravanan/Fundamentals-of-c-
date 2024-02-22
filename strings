@@ -1,0 +1,20 @@
+//Write a C program to scan a string from the user and to print it.
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a;
+    cin>>a;
+    cout<<"The string is "<<a;
+}
+//Write a C program to find the length of the given string using string library functions. 
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+    string a;
+    cin>>a;
+    cout<<"The length of "<<a<<" is "<<a.length();
+}
