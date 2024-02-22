@@ -36,8 +36,282 @@ int main()
             b++;
         }
     }
-    
+   // Write a C program to find the maximum element in an array
+#include<iostream>
+using namespace std;
+int main ()
+{
+    int n,max=0;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+        if(arr[i]>max)
+        {
+            max=arr[i];
+        }
+    }cout<<max;
+}
         cout<<"Odd:"<<b<<"\n";
         cout<<"Even:"<<a;
 
+}
+//Write a C program to find the type of array as whether it is even, odd or mixed. If all the elements of an array are even, then display the array type as even. If all the elements of an array are odd, then display the array type as odd. If an array has both even and odd elements, then display the array type as mixed.
+#include<iostream>
+using namespace std;
+int main()
+{
+     int n,a=0,b=0;
+     cin>>n;
+     int arr[n];
+     for(int i=0;i<n;i++)
+     {
+         cin>>arr[i];
+         if(arr[i]%2==0)
+         {
+             a++;
+         }
+         else 
+         {
+             b++;
+         }
+     }
+     if(n==a)
+     {
+         cout<<"Even";
+     }
+     else if (n==b)
+     {
+         cout<<"Odd";
+     }
+     else
+     {
+         cout<<"Mixed";
+     }
+        return 0;
+}
+//Write a C program to find the sum of elements in an array.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,sum=0;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+        sum=sum+arr[i];
+    }
+    cout<<sum;
+}
+//Write a C program to find whether two arrays are same or not. Two arrays are said to be same if the sum of both the arrays are same and size of arrays are same:
+#include<iostream>
+using namespace std;
+int main ()
+{
+    int n,m,count=0,count2=0;
+    cin>>n>>m;
+    int arr[n],arr1[m];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+        count=count+arr[i];
+    }
+    for(int j=0;j<m;j++)
+    {
+        cin>>arr1[j];
+        count2=count2+arr1[j];
+    }
+    if(count==count2)
+    {
+        cout<<"Same";
+    }
+    else
+    {
+        cout<<"Not Same";
+    }
+}
+//Write a C program to find the sum of positive square elements in an array:
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int n,a,c=0,s=0;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+        a=sqrt(arr[i]);
+        if(pow(a,2)==arr[i])
+        {
+            c=c+arr[i];
+        }
+    
+    }cout<<c;
+    
+    }
+//Write a C program to add two arrays:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,m,i,j,k;
+    cin>>n;
+    int arr[n],arr1[n];
+    {
+        for(int i=0;i<n;i++)
+        {
+            cin>>arr[i];
+        }
+            for(int j=0;j<n;j++)
+            {
+                cin>>arr1[j];
+            }
+            
+        for(int k=0;k<n;k++)
+        {
+            cout<<arr[k]+arr1[k]<<" ";
+        }
+    }
+}
+//Write a C program to sort the given array in ascending order:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,temp;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+        {
+            if(arr[i]>arr[j])
+            {
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+        }
+        for(int i=0;i<n;i++)
+        {
+         cout<<arr[i]<<"\n";
+        }
+
+}
+//Write a C program at the given position. to insert an element in an array
+If the position where the element to be inserted is greater than the size of an array display “Invalid Input”:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n1,n2,n3,i;
+    cin>>n1;
+    int arr[n1];
+    for(int i=0;i<n1;i++)//input
+    {
+        cin>>arr[i];
+    }
+    cin>>n2>>n3;//checking condition
+    if(n2<n1)
+    {
+        n1++;
+    for(int i=n1-1;i>=n2;i--)//shifting from rigth to create newspace
+    {
+        arr[i]=arr[i-1];
+    }
+    arr[n2-1]=n3;//inserting
+    for(int i=0;i<n1;i++)
+    {
+        cout<<arr[i]<<"\n";
+     
+    }}
+    else
+    {
+        cout<<"Invalid Input";
+    }
+}
+//Write a C program to delete the element from the given location in an array:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n1,n2,i;
+    cin>>n1;
+    int arr[n1];
+    for(int i=0;i<n1;i++)//input
+    {
+        cin>>arr[i];
+    }
+    cin>>n2;//checking condition
+    if(n2<=n1)
+    {
+    for(int i=n2-1;i<=n1-1;i++)//shifting from rigth to create newspace
+    {
+        arr[i]=arr[i+1];
+    }
+    n1--;
+    for(int i=0;i<n1;i++)
+    {
+        cout<<arr[i]<<"\n";
+     
+    }}
+    else
+    {
+        cout<<"Invalid Input";
+    }
+}
+//Write a C program to search an element whether it is present in the array or not:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,e,c=0;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    cin>>e;
+      for(int i=0;i<n;i++)
+      {
+    if(arr[i]==e)
+    {
+        c++;
+    }}
+        if(c>0)
+        {
+            cout<<e<<" is present in the array";
+        }
+        else
+        {
+            cout<<e<<" is not present in the array";
+        }
+      
+}
+//Write a C program to reverse an array:
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    for(int i=n-1;i>=0;i--)
+    {
+        cout<<arr[i]<<"\n";
+    }
 }
